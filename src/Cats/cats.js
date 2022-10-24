@@ -1,10 +1,12 @@
 import React, {useState} from 'react';
-import {Text, TextInput, View} from 'react-native';
+import {Image, Text, TextInput, View} from 'react-native';
 
 function Cats() {
     const [text, setText] = useState('');
+
     return (
         <View style={{padding: 10}}>
+            <Image source={require('../../assets/sad_cat.png')} style={{ width: 200, height: 200 }}></Image>
             <TextInput
                 style={{height: 40}}
                 placeholder="Type here"
