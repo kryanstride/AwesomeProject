@@ -1,12 +1,10 @@
 import React, {useState} from 'react';
 import {Image, Text, TextInput, View} from 'react-native';
-import yawningCat from "../../assets/yawning_cat.png";
 
 function Cats() {
     const [text, setText] = useState('');
     const [isCatYawning, setIsCatYawning] = useState(false);
     const sadCat = require('../../assets/sad_cat.png');
-    const [catImage, setCatImage] = useState(sadCat);
     const yawningCat = require('../../assets/yawning_cat.png');
 
     return (
@@ -15,7 +13,7 @@ function Cats() {
             <TextInput
                 style={{height: 40}}
                 placeholder="Type here"
-                onChangeText={newText => {setCatImage(yawningCat), setText(newText), setIsCatYawning(isCatYawning ? false : true)}}
+                onChangeText={newText => {setText(newText), setIsCatYawning(isCatYawning ? false : true)}}
                 defaultValue={text}
             />
             <Text style={{padding: 10, fontSize: 42}}>
@@ -24,6 +22,5 @@ function Cats() {
         </View>
     );
 }
-
 
 export default Cats
