@@ -27,7 +27,7 @@ export default function App() {
         >
             <View style={styles.centeredView}>
                 <View style={styles.modalView}>
-                    <Text style={styles.modalText}>Hello World!</Text>
+                    <Text style={styles.modalText}>Learn to speak cat!</Text>
                     <Pressable
                         style={[styles.button, styles.buttonClose]}
                         onPress={() => setModalVisible(!modalVisible)}

@@ -12,7 +12,7 @@ function Cats() {
             <Image source={isCatYawning ? yawningCat : sadCat} style={{ width: 200, height: 200 }}></Image>
             <TextInput
                 style={{height: 40}}
-                placeholder="Type here"
+                placeholder="Translate to cat"
                 onChangeText={newText => {setText(newText), setIsCatYawning(isCatYawning ? false : true)}}
                 defaultValue={text}
             />
